@@ -3,7 +3,8 @@ import threading
 import time
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.bind(('127.0.0.1', 9999))
+host = socket.gethostname()
+s.bind((host, 9999))
 
 s.listen(5)
 print('Waiting for connection...')
