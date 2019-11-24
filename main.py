@@ -29,4 +29,3 @@ while True:
     # 创建新线程来处理TCP连接:
     t = threading.Thread(target=tcplink, args=(sock, addr))
     t.start()
-  
