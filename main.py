@@ -19,6 +19,7 @@ def tcplink(sock, addr):
         if not data or data.decode('utf-8') == 'exit':
             break
         sock.send(('Hello, %s!' % data.decode('utf-8')).encode('utf-8'))
+        print('%s' % data.decode('utf-8'))
     sock.close()
     print('Connection from %s:%s closed.' % addr)
 
