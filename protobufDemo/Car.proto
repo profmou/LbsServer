@@ -1,0 +1,8 @@
+syntax = "proto3";
+package protobufExample;
+
+message car {
+    string name = 1;
+    string model = 2;
+    int32 price = 3;
+}
